@@ -1,0 +1,79 @@
+repo: "navigation-highlight"
+canvasCourse: "467502"
+canvasAssignment: "4178298"
+
+naming: true
+commits: 4
+
+html:
+  - path: "index.html"
+    valid: true
+    bestPractices: true
+    has:
+      - "header"
+      - "header nav"
+      - "header nav li"
+      - "header nav li a"
+      - "header h1"
+      - "main"
+      - "main h2"
+      - "footer"
+      - "footer small"
+      - 'header nav li a[class][href*="index.html"]'
+    search:
+      - "Sigmar\\+One"
+      - "©"
+      - "Berries, berries, oh my!"
+      - "In everyday English"
+
+  - path: "blueberries.html"
+    valid: true
+    bestPractices: true
+    has:
+      - 'header nav li a[class][href*="blueberries.html"]'
+      - 'img[src*="blueberries.jpg"]'
+    search:
+      - "Blueberries are perennial flowering plants"
+
+  - path: "grapes.html"
+    valid: true
+    bestPractices: true
+    has:
+      - 'header nav li a[class][href*="grapes.html"]'
+      - 'img[src*="grapes.jpg"]'
+    search:
+      - "Grapes can be eaten raw"
+
+  - path: "red-currants.html"
+    valid: true
+    bestPractices: true
+    has:
+      - 'header nav li a[class][href*="red-currants.html"]'
+      - 'img[src*="red-currants.jpg"]'
+    search:
+      - "the tart flavour of redcurrant"
+
+css:
+  - path: "css/main.css"
+    valid: true
+    bestPractices: true
+    has:
+      - ['body', 'margin', '0']
+    search:
+      - "Georgia"
+      - "Sigmar One"
+      - "#2f2d13"
+      - "#cc1465"
+      - "#ffe500"
+      - "#b20953"
+      - "#b2a212"
+
+screenshots:
+  - path: "index.html"
+    sizes: [400]
+  - path: "blueberries.html"
+    sizes: [400]
+  - path: "grapes.html"
+    sizes: [400]
+  - path: "red-currants.html"
+    sizes: [400]
