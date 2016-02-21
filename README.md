@@ -5,7 +5,7 @@
 
 ---
 
-**Quick project summary shown here.**
+**A code exercise to practice highlighting the current page in website navigation.**
 
 - *Fork this repository.*
 - Create the `index.html` file to match the screenshots.
