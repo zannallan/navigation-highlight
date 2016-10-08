@@ -1,11 +1,12 @@
-# Navigation highlight
-
-- Approx. completion time: **1.5 hours**
-- Deliverables: **4 HTML files, 1 CSS file, images**
-
+---
+summary: "A code exercise to practice highlighting the current page in website navigation."
+time: "1.5 hours"
+deliverables: "4 HTML files, 1 CSS file, images"
 ---
 
-**A code exercise to practice highlighting the current page in website navigation.**
+# Navigation highlight
+
+## Overview
 
 - *Fork this repository.*
 - Create the `index.html` file to match the screenshots.
@@ -20,6 +21,10 @@
 - *Typefaces*: `Georgia`, `Sigmar One`
 - *Text sizes*: `3rem`, `1.875rem`, `1.125rem`, `0.75rem`
 - *Colours:* `#2f2d13`, `#cc1465`, `#ffe500`, `#b20953`, `#b2a212`
+- *Line height:* `1.5`
+- *Paddings:* `0 0 0.4em`, `0.2em 0.5em 0.3em`, `0 10px`, `10px`
+- *Margins:* `0 0 0.2em`, `0.3em`
+- *Corner radius*: `4px`
 
 ---
 
@@ -27,7 +32,7 @@
 
 Visually match the images in the “screenshots” folder and create the interaction shown in the linked video.
 
-- [Final screenshots in the “screenshots” folder.](screenshots)
+- Final screenshots in the “screenshots” folder.
 - [**Watch this video to see how it interacts.**](https://youtu.be/3vzczaKij9A)
 
 ---

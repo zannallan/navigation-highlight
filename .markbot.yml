@@ -1,15 +1,21 @@
 repo: "navigation-highlight"
-canvasCourse: "467502"
-canvasAssignment: "4178298"
+canvasCourse: "web-dev-1"
 
 naming: true
-commits: 4
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 4
+  allCommitted: true
+  allSynced: true
 
 html:
   - path: "index.html"
     valid: true
     bestPractices: true
     has:
+      - ['link[href*="Sigmar+One"]', 'The Google Font, `Sigmar One` is missing']
       - "header"
       - "header nav"
       - "header nav li"
@@ -19,9 +25,8 @@ html:
       - "main h2"
       - "footer"
       - "footer small"
-      - 'header nav li a[class][href*="index.html"]'
+      - ['header nav li a[class][href*="index.html"]', 'The current page should be highlighted in the navigation']
     search:
-      - "Sigmar\\+One"
       - "©"
       - "Berries, berries, oh my!"
       - "In everyday English"
@@ -30,7 +35,7 @@ html:
     valid: true
     bestPractices: true
     has:
-      - 'header nav li a[class][href*="blueberries.html"]'
+      - ['header nav li a[class][href*="blueberries.html"]', 'The current page should be highlighted in the navigation']
       - 'img[src*="blueberries.jpg"]'
     search:
       - "Blueberries are perennial flowering plants"
@@ -39,7 +44,7 @@ html:
     valid: true
     bestPractices: true
     has:
-      - 'header nav li a[class][href*="grapes.html"]'
+      - ['header nav li a[class][href*="grapes.html"]', 'The current page should be highlighted in the navigation']
       - 'img[src*="grapes.jpg"]'
     search:
       - "Grapes can be eaten raw"
@@ -48,7 +53,7 @@ html:
     valid: true
     bestPractices: true
     has:
-      - 'header nav li a[class][href*="red-currants.html"]'
+      - ['header nav li a[class][href*="red-currants.html"]', 'The current page should be highlighted in the navigation']
       - 'img[src*="red-currants.jpg"]'
     search:
       - "the tart flavour of redcurrant"
@@ -58,7 +63,11 @@ css:
     valid: true
     bestPractices: true
     has:
+      - ['html', 'box-sizing', 'border-box']
+      - ['*', 'box-sizing', 'inherit']
       - ['body', 'margin', '0']
+      - ['img', 'display', 'block']
+      - ['img', 'width', '100%']
     search:
       - "Georgia"
       - "Sigmar One"
@@ -67,6 +76,7 @@ css:
       - "#ffe500"
       - "#b20953"
       - "#b2a212"
+      - "a:hover"
 
 screenshots:
   - path: "index.html"
@@ -77,3 +87,15 @@ screenshots:
     sizes: [400]
   - path: "red-currants.html"
     sizes: [400]
+
+functionality:
+  - path: 'index.html'
+    tests:
+      - |
+        let link = $('nav li:last-child a');
+        let oldBg = css(link).backgroundColor;
+
+        hover('nav li:last-child a', function () {
+          if (css(link).backgroundColor == oldBg) fail('The background colour of the link doesn’t change when hovered')
+          pass();
+        });
