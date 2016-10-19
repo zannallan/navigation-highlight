@@ -19,11 +19,11 @@ deliverables: "4 HTML files, 1 CSS file, images"
 ## Details
 
 - *Typefaces*: `Georgia`, `Sigmar One`
-- *Text sizes*: `3rem`, `1.875rem`, `1.125rem`, `0.75rem`
+- *Text sizes*: `3rem`, `1.875rem`, `1.125rem`, `.75rem`
 - *Colours:* `#2f2d13`, `#cc1465`, `#ffe500`, `#b20953`, `#b2a212`
 - *Line height:* `1.5`
-- *Paddings:* `0 0 0.4em`, `0.2em 0.5em 0.3em`, `0 10px`, `10px`
-- *Margins:* `0 0 0.2em`, `0.3em`
+- *Paddings:* `0 0 .4em`, `.2em .5em .3em`, `0 10px`, `10px`
+- *Margins:* `0 0 .2em`, `.3em`
 - *Corner radius*: `4px`
 
 ---
