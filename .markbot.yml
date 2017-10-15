@@ -1,19 +1,19 @@
 repo: "navigation-highlight"
 canvasCourse: "web-dev-1"
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 4
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-4
+  - html
+  - css
+  - google-fonts
+  - nav-hover
+  - box-sizing
+  - body-margin-0
+  - img-block-100
 
 html:
   - path: "index.html"
-    valid: true
-    bestPractices: true
     has:
       - ['link[href*="Sigmar+One"]', 'The Google Font, `Sigmar One` is missing']
       - "header"
@@ -32,8 +32,6 @@ html:
       - "In everyday English"
 
   - path: "blueberries.html"
-    valid: true
-    bestPractices: true
     has:
       - ['header nav li a[class][href*="blueberries.html"]', 'The current page should be highlighted in the navigation']
       - 'img[src*="blueberries.jpg"]'
@@ -41,8 +39,6 @@ html:
       - "Blueberries are perennial flowering plants"
 
   - path: "grapes.html"
-    valid: true
-    bestPractices: true
     has:
       - ['header nav li a[class][href*="grapes.html"]', 'The current page should be highlighted in the navigation']
       - 'img[src*="grapes.jpg"]'
@@ -50,8 +46,6 @@ html:
       - "Grapes can be eaten raw"
 
   - path: "red-currants.html"
-    valid: true
-    bestPractices: true
     has:
       - ['header nav li a[class][href*="red-currants.html"]', 'The current page should be highlighted in the navigation']
       - 'img[src*="red-currants.jpg"]'
@@ -60,14 +54,6 @@ html:
 
 css:
   - path: "css/main.css"
-    valid: true
-    bestPractices: true
-    has:
-      - ['html', 'box-sizing', 'border-box']
-      - ['*', 'box-sizing', 'inherit']
-      - ['body', 'margin', '0']
-      - ['img', 'display', 'block']
-      - ['img', 'width', '100%']
     search:
       - "Georgia"
       - "Sigmar One"
@@ -87,15 +73,3 @@ screenshots:
     sizes: [400]
   - path: "red-currants.html"
     sizes: [400]
-
-functionality:
-  - path: 'index.html'
-    tests:
-      - |
-        let link = $('nav li:last-child a');
-        let oldBg = css(link).backgroundColor;
-
-        hover('nav li:last-child a', function () {
-          if (css(link).backgroundColor == oldBg) fail('The background colour of the link doesn’t change when hovered')
-          pass();
-        });
