@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #ffe500;
+  margin-bottom: .75rem;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: .75rem;
+  font-family: Sigmar One, sans-serif;
+  color: #b20953;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+p {
+  font-family: Georgia, serif;
+  font-size: 1.125rem;
+  padding: 0 .75rem;
+  color: #2f2d13;
+}
+
+img {
+  display: block;
+  width: 100%;
+  padding: .75rem;
+}
+
+nav {
+  font-family: Georgia, serif;
+  font-size: 1.125rem;
+  text-align: center;
+  padding-bottom: .6rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: .2em .5em .3em;
+  margin: 0;
+}
+
+li {
+  margin-bottom: .3rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+li:hover {
+  background-color: #cc1465;
+}
+
+a:hover {
+  background-color: #cc1465;
+}
+
+a {
+  border-radius: 4px;
+  padding: .75rem;
+  background-color: #b2a212;
+  text-decoration: none;
+  color: #fff;
+}
+
+.current {
+  background-color: #cc1465;
+}
+
+footer {
+  padding: .75rem;
+  text-align: center;
+  background-color: #ffe500;
+}
+
+footer p {
+  margin: 0;
+  font-size: .75rem;
+}
