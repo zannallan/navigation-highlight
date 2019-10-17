@@ -36,6 +36,7 @@ h2 {
 p {
   font-family: Georgia, serif;
   font-size: 1.125rem;
+  margin-top: .3rem;
   padding: 0 .75rem;
   color: #2f2d13;
 }
@@ -81,8 +82,8 @@ a {
   color: #fff;
 }
 
-.current {
-  background-color: #cc1465;
+.currant {
+  background-color: #b20953;
 }
 
 footer {
